@@ -1,41 +1,314 @@
-KarigarConnect: AI-Powered Artisan Outreach  
-KarigarConnect is a creator-commerce platform powered by the Gemini 2.5 Flash Lite API. It uses AI to dynamically analyze artisan products, match them with influencers using text-embeddings, and forecast revenue using a predictive algorithm.
+# KarigarConnect AI
+### AI-Powered Creator Commerce Platform for Rural Artisans
 
-How It Works
+KarigarConnect AI bridges rural craftsmanship and the creator economy through AI-powered influencer matching, campaign forecasting, outreach automation, and profit optimization.
 
-The frontend is built with Next.js 14, and the backend is built with Python (FastAPI). It is designed to be deployed seamlessly on Vercel, which automatically handles the Python /api serverless functions.
+Built for Hackfluence 2026.
 
-How to Run Locally
+---
 
-If you clone this repository and want to run it on your own machine, you must run both the Next.js frontend server and the Python FastAPI backend server simultaneously.
+## Live Demo
 
-1. Set up your Environment Variables
-Create a .env file in the root of the project and add your Gemini API Key:
-GEMINI_API_KEY=your_gemini_api_key_here
+🌐 https://content-generator-hackfluence-seven.vercel.app/
 
-3. Start the Python Backend
+---
 
-The Python backend handles all the AI processing. You need to install the requirements and start the Uvicorn server.
+## Problem Statement
 
-# Install Python dependencies
-pip install fastapi uvicorn google-genai python-dotenv pydantic
+Millions of rural artisans create authentic handmade products but lack access to modern digital distribution channels.
 
-# Start the FastAPI server on port 8000
-cd api
-uvicorn index:app --reload --port 8000
+At the same time, creators and influencers are constantly searching for unique products that align with their audiences.
 
-3. Start the Next.js Frontend
+KarigarConnect AI acts as the infrastructure layer connecting both sides.
 
-Open a new terminal window, navigate to the root directory, and start Next.js.
+---
 
-# Install Node dependencies
+## What It Does
+
+KarigarConnect AI enables organizations, cooperatives, NGOs, and artisan communities to:
+
+- Upload artisan products
+- Analyze products using AI
+- Match products with influencers
+- Forecast campaign performance
+- Calculate artisan profits
+- Generate AI-powered outreach messages
+
+---
+
+# Platform Workflow
+
+```text
+Upload Product
+      ↓
+AI Product Analysis
+      ↓
+Influencer Matching
+      ↓
+Campaign Prediction
+      ↓
+Profit Calculator
+      ↓
+AI Outreach Generation
+```
+
+---
+
+# Features
+
+## Product Intelligence
+
+AI evaluates:
+
+- Product positioning
+- Sustainability relevance
+- Audience alignment
+- Market demand
+
+---
+
+## Influencer Matching
+
+Uses AI-powered similarity scoring to identify creators with:
+
+- Relevant audience demographics
+- Strong engagement rates
+- High conversion potential
+
+---
+
+## Campaign Forecasting
+
+Predicts:
+
+- Expected Reach
+- CTR
+- Orders
+- Revenue
+- Profitability
+
+before launching a campaign.
+
+---
+
+## Profit Optimization
+
+Transparent earnings breakdown showing:
+
+- Product Price
+- Shipping Costs
+- Platform Fees
+- Creator Commission
+- Final Artisan Earnings
+
+---
+
+## AI Outreach Generator
+
+Automatically generates personalized collaboration proposals for influencers using campaign data and product intelligence.
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Recharts
+
+---
+
+## Backend
+
+- FastAPI
+- Python
+- Uvicorn
+
+---
+
+## AI Layer
+
+- Google Gemini API
+- Embedding-based creator matching
+- Campaign forecasting algorithms
+- Automated outreach generation
+
+---
+
+# Project Structure
+
+```text
+KarigarConnect-AI/
+│
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   └── public/
+│
+├── backend/
+│   ├── routes/
+│   ├── models/
+│   └── services/
+│
+├── ai-agents/
+│   ├── matching-agent/
+│   ├── prediction-agent/
+│   └── outreach-agent/
+│
+└── docs/
+    └── KarigarConnectppt.pdf
+```
+
+---
+
+# Local Setup
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/Bishalyadav-01/KarigarConnect-AI.git
+
+cd KarigarConnect-AI
+```
+
+---
+
+## 2. Install Frontend Dependencies
+
+```bash
 npm install
+```
 
-# Start the Next.js frontend on port 3000
+---
+
+## 3. Run Frontend
+
+```bash
 npm run dev
+```
 
-Note: The next.config.ts has been configured to automatically rewrite /api/* requests to your local Python server (http://127.0.0.1:8000) during development!
+Frontend runs on:
 
-Deployment
+```text
+http://localhost:3000
+```
 
-This project is pre-configured for Vercel. Simply push the code to GitHub and import the repository into Vercel. Vercel will automatically detect the /api directory and deploy it as Python Serverless Functions. Remember to add your GEMINI_API_KEY to the Vercel Environment Variables in your project settings!
+---
+
+## 4. Run Backend
+
+Navigate to backend folder:
+
+```bash
+cd backend
+```
+
+Install requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run server:
+
+```bash
+uvicorn main:app --reload
+```
+
+Backend runs on:
+
+```text
+http://localhost:8000
+```
+
+---
+
+# API Endpoints
+
+| Endpoint | Purpose |
+|-----------|-----------|
+| /matching | Creator Matching |
+| /prediction | Campaign Forecasting |
+| /profit | Profit Calculator |
+| /campaigns/create | Campaign Creation |
+| /health | Health Check |
+
+---
+
+# Design Philosophy
+
+The frontend follows an editorial institutional design system inspired by:
+
+- Kinfolk
+- Monocle
+- Private Equity Reports
+- Luxury Investment Platforms
+
+Design characteristics:
+
+- Warm bone backgrounds
+- Charcoal typography
+- Architectural layouts
+- Editorial labels
+- Institutional visual language
+
+---
+
+# Impact
+
+KarigarConnect AI helps:
+
+- Rural artisans
+- Handicraft cooperatives
+- NGOs
+- Government livelihood programs
+- Social commerce startups
+
+create sustainable digital income opportunities.
+
+---
+
+# Hackathon
+
+Project developed for:
+
+**Hackfluence 2026**
+
+Theme:
+
+> Bridging rural craftsmanship and the creator economy through AI-powered influencer matching and social commerce.
+
+---
+
+# Presentation
+
+Project Presentation:
+
+```text
+/docs/KarigarConnectppt.pdf
+```
+
+---
+
+# Author
+
+### Vishal Yadav
+
+LinkedIn:
+https://www.linkedin.com/in/bishal-yadav
+
+GitHub:
+https://github.com/Bishalyadav-01
+
+---
+
+# License
+
+MIT License
+
+© 2026 KarigarConnect AI
