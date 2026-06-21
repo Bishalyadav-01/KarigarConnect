@@ -300,15 +300,11 @@ Project Presentation:
 ### Vishal Yadav
 
 LinkedIn:
-https://www.linkedin.com/in/bishal-yadav
+https://www.linkedin.com/in/bishal-yd-0506m/
 
 GitHub:
 https://github.com/Bishalyadav-01
 
 ---
-
-# License
-
-MIT License
 
 © 2026 KarigarConnect AI
