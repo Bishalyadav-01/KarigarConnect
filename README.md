@@ -297,7 +297,7 @@ Project Presentation:
 
 # Author
 
-### Vishal Yadav
+### Bishal Yadav
 
 LinkedIn:
 https://www.linkedin.com/in/bishal-yd-0506m/
