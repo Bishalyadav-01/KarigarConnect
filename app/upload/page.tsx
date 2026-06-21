@@ -9,14 +9,20 @@ export default function UploadPage() {
   const [image, setImage] = useState<string | null>(null);
 
   const handleImage = (
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const file = e.target.files?.[0];
+  e: React.ChangeEvent<HTMLInputElement>
+) => {
+  const file = e.target.files?.[0];
 
-    if (!file) return;
+  if (!file) return;
 
-    setImage(URL.createObjectURL(file));
+  const reader = new FileReader();
+
+  reader.onload = () => {
+    setImage(reader.result as string);
   };
+
+  reader.readAsDataURL(file);
+};
 
   return (
     <DashboardLayout>
